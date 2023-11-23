@@ -55,6 +55,7 @@ namespace WebApi.IntegrationTests
             services.AddScoped(typeof(BaseRepository<>));
 
             services.AddTransient<OrderService>();
+            services.AddTransient<StoreService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
